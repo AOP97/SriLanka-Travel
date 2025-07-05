@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Srilanka</title>
 
-      <!----------------- FAVICON ----------------->
+      <!-- FAVICON -->
       <link rel="shortcut icon" href="./assets/Images/favicon.png" type="image/x-icon">
 
-      <!----------------- REMIXICONS ----------------->
+      <!-- REMIXICONS -->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-      <!-- --------------- CSS --------------- -->
+      <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/styles.css">
 
       <!-- Glide.js -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+      <!-- Masonry.js -->
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+      <!-- Lightbox -->
+      <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+
 
 
     
@@ -38,7 +46,7 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="#popular" class="nav__link">Popular</a>
+                     <a href="#popular" class="nav__link">Gallery</a>
                   </li>
 
                   <li class="nav__item">
@@ -68,48 +76,45 @@
 
             <div class="home__container container grid">
                <div class="home__data">
-                  <h3 class="home__subtitle">
-                     Welcome To Travel
-                  </h3>
 
                   <h1 class="home__title">
-                     Explore <br>
-                     The World
+                     Find Your Paradise <br>
+                     in Sri Lanka
                   </h1>
 
                   <p class="home__description">
-                     Live the trips exploring the world, discover 
-                     paradises, islands, mountains and much 
-                     more, get your trip now.
+                        From golden beaches to lush hill country,
+                        ancient cities to wild safaris
+                        explore the island where every moment tells a story.
                   </p>
 
                   <a href="#" class="button">
-                     Start Your Journey <i class="ri-arrow-right-line"></i>
+                     Explore Now <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
 
                <div class="home__cards grid">
                   <article class="home__card">
                      <img src="./assets/Images/home-trees.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Croatia</h3>
+                     <h3 class="home__card-title">Ella</h3>
                      <div class="home__card-shadow"></div>
                   </article>
 
                   <article class="home__card">
                      <img src="./assets/Images/home-lake.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Iceland</h3>
+                     <h3 class="home__card-title">Unawatuna</h3>
                      <div class="home__card-shadow"></div>
                   </article>
 
                   <article class="home__card">
                      <img src="./assets/Images/home-mountain.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Italy</h3>
+                     <h3 class="home__card-title">Mirissa</h3>
                      <div class="home__card-shadow"></div>
                   </article>
 
                   <article class="home__card">
                      <img src="./assets/Images/home-beach.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Spain</h3>
+                     <h3 class="home__card-title">Sigiriya</h3>
                      <div class="home__card-shadow"></div>
                   </article>
                </div>
@@ -121,20 +126,20 @@
             <div class="about__container container grid">
                <div class="about__data">
                   <h2 class="section__title">
-                     Learn More <br>
-                     About Travel
+                     Discover the <br>
+                     Magic of Sri Lanka
                   </h2>
 
                   <p class="about__description">
-                     All the trips around the world are a great 
-                     pleasure and happiness for anyone, enjoy 
-                     the sights when you travel the world. Travel 
-                     safely and without worries, get your trip and 
-                     explore the paradises of the world.
+                        Every journey begins with a moment of curiosity a desire to step into the unknown
+                        and return with stories worth sharing. In Sri Lanka, that moment unfolds in countless ways:
+                        watching elephants roam free, tasting spicy street food in Colombo, or catching a sunrise from the peak of Adam’s Peak.
+                        Whether you're chasing adventure, serenity, or cultural depth, Sri Lanka offers it all wrapped in warmth,
+                        color, and unforgettable beauty.
                   </p>
 
                   <a href="#" class="button">
-                     Explore Travel <i class="ri-arrow-right-line"></i>
+                     Begin Your Sri Lankan Story <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
 
@@ -163,59 +168,24 @@
          <section class="popular section" id="popular">
             <h2 class="section__title">
                Enjoy The Beauty <br>
-               Of The World
+               Of Sri Lanka
             </h2>
+               <div class="popular__container" id="masonry-grid">
+               <a href="assets/Images/popular-lake.jpg" data-lightbox="popular" data-title="Lake View">
+                  <img src="assets/Images/popular-lake.jpg" alt="Lake" class="masonry-img" />
+               </a>
 
-            <div class="popular__container container grid">
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="./assets/Images/popular-mountain.jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
+               <a href="assets/Images/popular-forest.jpg" data-lightbox="popular" data-title="Forest Trail">
+                  <img src="assets/Images/popular-forest.jpg" alt="Forest" class="masonry-img" />
+               </a>
 
-                  <h2 class="popular__title">
-                     Logan Mountain
-                  </h2>
+               <a href="assets/Images/popular-mountain.jpg" data-lightbox="popular" data-title="Mountain Retreat">
+                  <img src="assets/Images/popular-mountain.jpg" alt="Mountain" class="masonry-img" />
+               </a>
 
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i>
-                     <span>Canadá</span>
-                  </div>
-               </article>
+               
 
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="./assets/Images/popular-forest.jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
-
-                  <h2 class="popular__title">
-                     Spike Forest
-                  </h2>
-
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i> 
-                     <span>Irland</span>
-                  </div>
-               </article>
-
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="./assets/Images/popular-lake.jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
-
-                  <h2 class="popular__title">
-                     Garda Lake
-                  </h2>
-
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i>
-                     <span>Italy</span>
-                  </div>
-               </article>
-            </div>
-         </section>
+               </div>
          
          <!--==================== EXPLORE ====================-->
          <section class="explore section" id="explore">
@@ -241,158 +211,11 @@
                      </p>
                   </div>
 
-                  <div class="explore__user">
-                     <img src="./assets/Images/explore-perfil.png" alt="explore image" class="explore__perfil">
-                     <span class="explore__name">Paul Jeams</span>
-                  </div>
                </div>
             </div>
          </section>
          
-         <!--==================== JOIN ====================-->
-         <section class="join section">
-            <div class="join__container container grid">
-               <div class="join__data">
-                  <h2 class="section__title">
-                     Your Journey <br>
-                     Starts Here
-                  </h2>
-
-                  <p class="join__description">
-                     Get up to date with the latest 
-                     travel and information from us.
-                  </p>
-
-                  <form action="" class="join__form">
-                     <input type="email" placeholder="Enter your email" class="join__input">
-
-                     <button class="join__button button">
-                        Subscribe Our Newsletter <i class="ri-arrow-right-line"></i>
-                     </button>
-                  </form>
-               </div>
-
-               <div class="join__image">
-                  <img src="./assets/Images/join-island.jpg" alt="join image" class="join__img">
-                  <div class="join__shadow"></div>
-               </div>
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <div class="footer__content grid">
-               <div>
-                  <a href="#" class="footer__logo">Travel</a>
-
-                  <p class="footer__description">
-                     Travel with us and explore <br> 
-                     the world without limits.
-                  </p>
-               </div>
-
-               <div class="footer__data grid">
-                  <div>
-                     <h3 class="footer__title">About</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">About Us</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Features</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#" class="footer__link">News & Blog</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Company</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">FAQs</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">History</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Testimonials</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Contact</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Call Center</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Support Center</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Support</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Privacy Policy</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Terms & Services</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Payments</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-
-            <div class="footer__group">
-               <div class="footer__social">
-                  <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
-                     <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-twitter-line"></i>
-                  </a>
-
-                  <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-youtube-line"></i>
-                  </a>
-               </div>
-
-               <span class="footer__copy">
-                  &#169; Copyright wanderly. All rights reserved
-               </span>
-            </div>
-         </div>
-      </footer>
+        
 
       <!--========== SCROLL UP ==========-->
       <a href="#" class="scrollup" id="scroll-up">
