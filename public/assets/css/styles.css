@@ -327,8 +327,8 @@ img {
 }
 
 .about__img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  /* height: auto; */
   border-radius: 10px;
   transition: transform 0.4s ease-in-out;
 }
