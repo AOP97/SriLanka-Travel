@@ -4,114 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Srilanka</title>
-
-      <!-- FAVICON -->
       <link rel="shortcut icon" href="./assets/Images/favicon.png" type="image/x-icon">
-
-      <!-- REMIXICONS -->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-      <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/styles.css">
-
-      <!-- Glide.js -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-
-      <!-- Masonry.js -->
       <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-      <!-- Lightbox -->
       <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
       <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
-
-
-
-    
+      <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
 </head>
+
 <body>
-    <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
             <a href="#" class="nav__logo">WANDERSL</a>
-
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
                      <a href="#home" class="nav__link active-link">Home</a>
                   </li>
-
                   <li class="nav__item">
                      <a href="#about" class="nav__link">About</a>
                   </li>
-
                   <li class="nav__item">
-                     <a href="#popular" class="nav__link">Gallery</a>
+                     <a href="#gallery" class="nav__link">Gallery</a>
                   </li>
-
                   <li class="nav__item">
-                     <a href="#explore" class="nav__link">Explore</a>
+                     <a href="#contact" class="nav__link">Contact-/a>
                   </li>
                </ul>
-
-               <!-- Close button -->
                <div class="nav__close" id="nav-close">
                   <i class="ri-close-line"></i>
                </div>
             </div>
-
-            <!-- Toggle button -->
             <div class="nav__toggle" id="nav-toggle">
                <i class="ri-menu-line"></i>
             </div>
          </nav>
       </header>
 
-      <!--==================== MAIN ====================-->
+
       <main class="main">
-         <!--==================== HOME ====================-->
          <section class="home section" id="home">
+            <canvas id="granim-canvas" class="home__bg"></canvas>
             <img src="./assets/Images/home-bg.jpg" alt="home image" class="home__bg">
             <div class="home__shadow"></div>
-
             <div class="home__container container grid">
                <div class="home__data">
-
                   <h1 class="home__title">
                      Find Your Paradise <br>
                      in Sri Lanka
                   </h1>
-
                   <p class="home__description">
                         From golden beaches to lush hill country,
                         ancient cities to wild safaris
                         explore the island where every moment tells a story.
                   </p>
-
-                  <a href="#" class="button">
+                  <a href="#popular" class="button">
                      Explore Now <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
-
                <div class="home__cards grid">
                   <article class="home__card">
                      <img src="./assets/Images/home-trees.jpg" alt="home image" class="home__card-img">
                      <h3 class="home__card-title">Ella</h3>
                      <div class="home__card-shadow"></div>
                   </article>
-
                   <article class="home__card">
                      <img src="./assets/Images/home-lake.jpg" alt="home image" class="home__card-img">
                      <h3 class="home__card-title">Unawatuna</h3>
                      <div class="home__card-shadow"></div>
                   </article>
-
                   <article class="home__card">
                      <img src="./assets/Images/home-mountain.jpg" alt="home image" class="home__card-img">
                      <h3 class="home__card-title">Mirissa</h3>
                      <div class="home__card-shadow"></div>
                   </article>
-
                   <article class="home__card">
                      <img src="./assets/Images/home-beach.jpg" alt="home image" class="home__card-img">
                      <h3 class="home__card-title">Sigiriya</h3>
@@ -121,7 +90,8 @@
             </div>
          </section>
 
-         <!--==================== ABOUT ====================-->
+         <!-- -------------------------- About section ---------------------------- -->
+
          <section class="about section" id="about">
             <div class="about__container container grid">
                <div class="about__data">
@@ -129,7 +99,6 @@
                      Discover the <br>
                      Magic of Sri Lanka
                   </h2>
-
                   <p class="about__description">
                         Every journey begins with a moment of curiosity a desire to step into the unknown
                         and return with stories worth sharing. In Sri Lanka, that moment unfolds in countless ways:
@@ -137,12 +106,10 @@
                         Whether you're chasing adventure, serenity, or cultural depth, Sri Lanka offers it all wrapped in warmth,
                         color, and unforgettable beauty.
                   </p>
-
-                  <a href="#" class="button">
+                  <a href="#explore" class="button">
                      Begin Your Sri Lankan Story <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
-
                      <div class="about__image">
                      <div class="glide about-carousel">
                         <div class="glide__track" data-glide-el="track">
@@ -156,6 +123,12 @@
                            <li class="glide__slide">
                               <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
                            </li>
+                             <li class="glide__slide">
+                              <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
+                           </li>
+                             <li class="glide__slide">
+                              <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
+                           </li>
                            </ul>
                         </div>
                      </div>
@@ -164,214 +137,111 @@
             </div>
          </section>
 
-         <!--==================== POPULAR ====================-->
-         <section class="popular section" id="popular">
-            <h2 class="section__title">
-               Enjoy The Beauty <br>
-               Of Sri Lanka
-            </h2>
-               <div class="popular__container" id="masonry-grid">
-               <a href="assets/Images/popular-lake.jpg" data-lightbox="popular" data-title="Lake View">
-                  <img src="assets/Images/popular-lake.jpg" alt="Lake" class="masonry-img" />
-               </a>
+         <!-- -------------------------- About section finished ---------------------------- -->
 
-               <a href="assets/Images/popular-forest.jpg" data-lightbox="popular" data-title="Forest Trail">
-                  <img src="assets/Images/popular-forest.jpg" alt="Forest" class="masonry-img" />
-               </a>
+         <!-- -------------------------- Gallery section ---------------------------- -->
 
-               <a href="assets/Images/popular-mountain.jpg" data-lightbox="popular" data-title="Mountain Retreat">
-                  <img src="assets/Images/popular-mountain.jpg" alt="Mountain" class="masonry-img" />
-               </a>
+            <section class="gallery section" id="gallery">
+            <h2 class="section__title">Explore the 
+            Sri Lankan Gallery</h2>
+            <div class="gallery__container" id="masonry-grid">
+            <a data-lightbox="gallery" data-title="Lake View" href="assets/Images/popular-lake.jpg">
+            <img alt="Lake" class="masonry-img" src="assets/Images/popular-lake.jpg"/>
+            </a>
+            <a data-lightbox="gallery" data-title="Forest Trail" href="assets/Images/popular-forest.jpg">
+            <img alt="Forest" class="masonry-img" src="assets/Images/popular-forest.jpg"/>
+            </a>
+            <a data-lightbox="gallery" data-title="Mountain Retreat" href="assets/Images/popular-mountain.jpg">
+            <img alt="Mountain" class="masonry-img" src="assets/Images/popular-mountain.jpg"/>
+            </a>
+            </div>
 
-               
+        <!-- -------------------------- Gallery section finished ---------------------------- -->
 
-               </div>
-         
-         <!--==================== EXPLORE ====================-->
+        <!-- -------------------------- explore section finished ---------------------------- -->
          <section class="explore section" id="explore">
             <div class="explore__container">
                <div class="explore__image">
                   <img src="./assets/Images/explore-beach.jpg" alt="expore image" class="explore__img">
                   <div class="explore__shadow"></div>
                </div>
-
                <div class="explore__content container grid">
                   <div class="explore__data">
                      <h2 class="section__title">
                         Explore The <br> 
                         Best Paradises
                      </h2>
-   
                      <p class="explore__description">
-                        Exploring paradises such as islands and 
-                        valleys when traveling the world is one of 
-                        the greatest experiences when you travel, it 
-                        offers you harmony and peace and you 
-                        can enjoy it with great comfort.
+                        Exploring paradise — from sun-drenched islands to misty valleys — is one of travel’s greatest gifts.
+                        It offers harmony, peace, and a deep connection to nature. In Sri Lanka, you’ll find all of this and more,
+                        wrapped in comfort and unforgettable beauty.
                      </p>
                   </div>
-
                </div>
             </div>
          </section>
+
          
-         <!--==================== JOIN ====================-->
-         <section class="join section">
-            <div class="join__container container grid">
-               <div class="join__data">
+          <!-- -------------------------- explore section finished ---------------------------- -->
+
+           <!-- -------------------------- contact section ---------------------------- -->
+
+         <section class="contact section">
+            <div class="contact__container container grid">
+               <div class="contact__data">
                   <h2 class="section__title">
                      Your Journey <br>
                      Starts Here
                   </h2>
-
-                  <p class="join__description">
+                  <p class="contact__description">
                      Get up to date with the latest 
                      travel and information from us.
                   </p>
-
-                  <form action="" class="join__form">
-                     <input type="email" placeholder="Enter your email" class="join__input">
-
-                     <button class="join__button button">
+                  <form action="" class="contact__form">
+                     <input type="email" placeholder="Enter your email" class="contact__input">
+                     <button class="contact__button button">
                         Subscribe Our Newsletter <i class="ri-arrow-right-line"></i>
                      </button>
                   </form>
                </div>
-
-               <div class="join__image">
-                  <img src="./assets/Images/join-island.jpg" alt="join image" class="join__img">
-                  <div class="join__shadow"></div>
+               <div class="contact__image">
+                  <img src="./assets/Images/contact-island.jpg" alt="contact image" class="contact__img">
+                  <div class="contact__shadow"></div>
                </div>
             </div>
          </section>
+
+         <!-- -------------------------- contact section finished ---------------------------- -->
       </main>
 
-      <!--==================== FOOTER ====================-->
+
       <footer class="footer">
-         <div class="footer__container container grid">
-            <div class="footer__content grid">
-               <div>
-                  <a href="#" class="footer__logo">Travel</a>
-
-                  <p class="footer__description">
-                     Travel with us and explore <br> 
-                     the world without limits.
-                  </p>
-               </div>
-
-               <div class="footer__data grid">
-                  <div>
-                     <h3 class="footer__title">About</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">About Us</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Features</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#" class="footer__link">News & Blog</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Company</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">FAQs</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">History</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Testimonials</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Contact</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Call Center</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Support Center</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Support</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Privacy Policy</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Terms & Services</a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Payments</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-
-            <div class="footer__group">
-               <div class="footer__social">
-                  <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
-                     <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-twitter-line"></i>
-                  </a>
-
-                  <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-youtube-line"></i>
-                  </a>
-               </div>
-
-               <span class="footer__copy">
-                  &#169; Copyright wanderly. All rights reserved
-               </span>
-            </div>
-         </div>
-
-      <!--========== SCROLL UP ==========-->
+  <div class="footer__container container grid">
+    <div class="footer__group">
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+          <i class="ri-facebook-line"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+          <i class="ri-twitter-line"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+          <i class="ri-youtube-line"></i>
+        </a>
+      </div>
+      <span class="footer__copy">
+        &#169; Copyright wanderly. All rights reserved
+      </span>
+    </div>
+  </div>
+</footer>
       <a href="#" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-line"></i>
       </a>
-
-      <!--=============== SCROLLREVEAL ===============-->
       <script src="./assets/js/scrollreveal.min.js"></script>
-
-      
-
-      <!--=============== MAIN JS ===============-->
       <script src="./assets/Js/main.js"></script>
-
-    
 </body>
 </html>

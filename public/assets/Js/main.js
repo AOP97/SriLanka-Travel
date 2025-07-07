@@ -77,6 +77,23 @@ const sr = ScrollReveal({
     // reset: true // Animations repeat
 })
 
+/*=============== GRADIENT BACKGROUND ===============*/
+const granimInstance = new Granim({
+  element: '#granim-canvas',
+  direction: 'diagonal',
+  isPausedWhenNotInView: true,
+  states: {
+    "default-state": {
+      gradients: [
+        ['#0f2027', '#2c5364'],
+        ['#1a2a6c', '#b21f1f', '#fdbb2d'],
+        ['#134E5E', '#71B280']
+      ],
+      transitionSpeed: 5000
+    }
+  }
+});
+
 /*=============== SLIDE GLIDE ===============*/
 new Glide('.about-carousel', {
   type: 'carousel',
