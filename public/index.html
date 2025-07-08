@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Srilanka</title>
+
+      <link rel="stylesheet" href="./assets/css/styles.css">
+
+
       <link rel="shortcut icon" href="./assets/Images/favicon.png" type="image/x-icon">
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-      <link rel="stylesheet" href="./assets/css/styles.css">
+      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
       <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+      <!-- lightbox -->
       <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
       <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+
       <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
 </head>
 
@@ -31,7 +38,7 @@
                      <a href="#gallery" class="nav__link">Gallery</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact-/a>
+                     <a href="#contact" class="nav__link">Contact</a>
                   </li>
                </ul>
                <div class="nav__close" id="nav-close">
@@ -141,20 +148,52 @@
 
          <!-- -------------------------- Gallery section ---------------------------- -->
 
+            <!-- <section class="gallery section" id="gallery">
+               <h2 class="section__title">Explore the 
+               Sri Lankan Gallery</h2>
+                     <div class="container" id="gallery-grid">
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Ella">
+                           <div class="box" style="grid-area: box1;">
+                           <h2>Ella</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Unawatuna">
+                           <div class="box" style="grid-area: box2;">
+                           <h2>Unawatuna</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Sigiriya">
+                           <div class="box" style="grid-area: box3;">
+                           <h2>Sigiriya</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Kandy">
+                           <div class="box" style="grid-area: box4;">
+                           <h2>Kandy</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Nuwara Eliya">
+                           <div class="box" style="grid-area: box5;">
+                           <h2>Nuwara Eliya</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Arugam Bay">
+                           <div class="box" style="grid-area: box6;">
+                           <h2>Arugam Bay</h2>
+                           </div>
+                        </a>
+                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Trincomalee">
+                           <div class="box" style="grid-area: box7;">
+                           <h2>Trincomalee</h2>
+                           </div>
+                        </a>
+                     </div>
+            </section> -->
+
             <section class="gallery section" id="gallery">
-            <h2 class="section__title">Explore the 
-            Sri Lankan Gallery</h2>
-            <div class="gallery__container" id="masonry-grid">
-            <a data-lightbox="gallery" data-title="Lake View" href="assets/Images/popular-lake.jpg">
-            <img alt="Lake" class="masonry-img" src="assets/Images/popular-lake.jpg"/>
-            </a>
-            <a data-lightbox="gallery" data-title="Forest Trail" href="assets/Images/popular-forest.jpg">
-            <img alt="Forest" class="masonry-img" src="assets/Images/popular-forest.jpg"/>
-            </a>
-            <a data-lightbox="gallery" data-title="Mountain Retreat" href="assets/Images/popular-mountain.jpg">
-            <img alt="Mountain" class="masonry-img" src="assets/Images/popular-mountain.jpg"/>
-            </a>
-            </div>
+            <h2 class="section__title">Explore Sri Lanka</h2>
+            <div class="gallery__container" id="gallery-grid"></div>
+            </section>
 
         <!-- -------------------------- Gallery section finished ---------------------------- -->
 
@@ -185,32 +224,35 @@
           <!-- -------------------------- explore section finished ---------------------------- -->
 
            <!-- -------------------------- contact section ---------------------------- -->
-
-         <section class="contact section">
-            <div class="contact__container container grid">
-               <div class="contact__data">
-                  <h2 class="section__title">
+               <section class="contact section" id="contact">
+               <div class="contact__container container grid">
+                  <!-- Contact Form -->
+                  <div class="contact__data">
+                     <h2 class="section__title">
                      Your Journey <br>
                      Starts Here
-                  </h2>
-                  <p class="contact__description">
-                     Get up to date with the latest 
-                     travel and information from us.
-                  </p>
-                  <form action="" class="contact__form">
-                     <input type="email" placeholder="Enter your email" class="contact__input">
-                     <button class="contact__button button">
-                        Subscribe Our Newsletter <i class="ri-arrow-right-line"></i>
-                     </button>
-                  </form>
-               </div>
-               <div class="contact__image">
-                  <img src="./assets/Images/contact-island.jpg" alt="contact image" class="contact__img">
-                  <div class="contact__shadow"></div>
-               </div>
-            </div>
-         </section>
+                     </h2>
+                     <p class="contact__description">
+                     Tell us where you dream of going and we’ll craft the perfect Sri Lankan travel plan just for you.
+                     </p>
 
+                     <form action="" id="contact-form" class="contact__form">
+                     <input type="text" placeholder="Your Name" class="contact__input" required>
+                     <input type="email" placeholder="Your Email" class="contact__input" required>
+                     <textarea placeholder="Your Message" class="contact__input" rows="5" required></textarea>
+                     <button class="contact__button button" type="submit">
+                        Send Message <i class="ri-arrow-right-line"></i>
+                     </button>
+                     </form>
+                  </div>
+
+                  <!-- Image Section -->
+                  <div class="contact__image">
+                     <img src="./assets/Images/contact-island.jpg" alt="Contact image" class="contact__img">
+                     <div class="contact__shadow"></div>
+                  </div>
+               </div>
+               </section>
          <!-- -------------------------- contact section finished ---------------------------- -->
       </main>
 
@@ -233,7 +275,7 @@
         </a>
       </div>
       <span class="footer__copy">
-        &#169; Copyright wanderly. All rights reserved
+        &#169; Copyright wandersl. All rights reserved
       </span>
     </div>
   </div>

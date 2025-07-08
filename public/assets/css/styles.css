@@ -309,15 +309,10 @@ img {
   height: 100%;
   background: var(--shadow-gradient);
 }
-.gallery__container {
-  column-count: 3;
-  column-gap: 1rem;
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
+
 .gallery__container a {
   display: block;
+  height: 100%;
   margin-bottom: 1rem;
   break-inside: avoid;
   position: relative;
@@ -402,9 +397,13 @@ img {
 .contact__input {
   padding: 1.25rem 1rem;
   background-color: var(--container-color);
+  color: var(--title-color);
+  border-radius: 2rem;
+  resize: none;
 }
 .contact__button {
   cursor: pointer;
+  border-radius: 50px;
 }
 .contact__image {
   position: relative;
@@ -549,8 +548,8 @@ img {
   }
   .about__data,.contact__data{
        font-size: 1rem;
-    text-align: initial;
-    line-height: 1
+       text-align: initial;
+       line-height: 1
   }
   .about__data .section__title,
   .contact__data .section__title {
@@ -558,9 +557,7 @@ img {
     text-align: initial;
     line-height: 1
   }
-  .gallery__container {
-    grid-template-columns: repeat(2, 240px);
-  }
+  
   .explore__img {
     width: 100vw;
   }
@@ -588,9 +585,7 @@ img {
     flex-direction: row;
     column-gap: 4rem;
   }
-  .gallery__container {
-    grid-template-columns: repeat(3, 240px);
-  }
+  
   .footer__data {
     grid-template-columns: repeat(4, max-content);
     column-gap: 4.5rem;
@@ -648,11 +643,7 @@ img {
     margin-bottom: 3rem;
   }
 
-  .gallery__container {
-    grid-template-columns: repeat(3, 300px);
-    column-gap: 3rem;
-    padding-top: 4rem;
-  }
+  
   .gallery__title {
     font-size: var(--h2-font-size);
   }
@@ -704,4 +695,49 @@ img {
   .scrollup {
     right: 3rem;
   }
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "box1 box1 box2 box3"
+    "box5 box6 box2 box4"
+    "box5 box7 box7 box7";
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  height: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay for text readability */
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box h2 {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
