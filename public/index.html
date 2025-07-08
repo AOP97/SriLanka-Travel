@@ -1,289 +1,156 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Srilanka</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Sri Lanka</title>
 
-      <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css">
 
-      <link rel="shortcut icon" href="./assets/Images/favicon.png" type="image/x-icon">
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-      
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-      <!-- lightbox -->
-      <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
-      <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
-
-      <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
 </head>
-
 <body>
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">WANDERSL</a>
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link active-link">Home</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#gallery" class="nav__link">Gallery</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-               </ul>
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-            </div>
-         </nav>
-      </header>
-
-
-      <main class="main">
-         <section class="home section" id="home">
-            <canvas id="granim-canvas" class="home__bg"></canvas>
-            <img src="./assets/Images/home-bg.jpg" alt="home image" class="home__bg">
-            <div class="home__shadow"></div>
-            <div class="home__container container grid">
-               <div class="home__data">
-                  <h1 class="home__title">
-                     Find Your Paradise <br>
-                     in Sri Lanka
-                  </h1>
-                  <p class="home__description">
-                        From golden beaches to lush hill country,
-                        ancient cities to wild safaris
-                        explore the island where every moment tells a story.
-                  </p>
-                  <a href="#popular" class="button">
-                     Explore Now <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-               <div class="home__cards grid">
-                  <article class="home__card">
-                     <img src="./assets/Images/home-trees.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Ella</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-                  <article class="home__card">
-                     <img src="./assets/Images/home-lake.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Unawatuna</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-                  <article class="home__card">
-                     <img src="./assets/Images/home-mountain.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Mirissa</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-                  <article class="home__card">
-                     <img src="./assets/Images/home-beach.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Sigiriya</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-               </div>
-            </div>
-         </section>
-
-         <!-- -------------------------- About section ---------------------------- -->
-
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <div class="about__data">
-                  <h2 class="section__title">
-                     Discover the <br>
-                     Magic of Sri Lanka
-                  </h2>
-                  <p class="about__description">
-                        Every journey begins with a moment of curiosity a desire to step into the unknown
-                        and return with stories worth sharing. In Sri Lanka, that moment unfolds in countless ways:
-                        watching elephants roam free, tasting spicy street food in Colombo, or catching a sunrise from the peak of Adam’s Peak.
-                        Whether you're chasing adventure, serenity, or cultural depth, Sri Lanka offers it all wrapped in warmth,
-                        color, and unforgettable beauty.
-                  </p>
-                  <a href="#explore" class="button">
-                     Begin Your Sri Lankan Story <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-                     <div class="about__image">
-                     <div class="glide about-carousel">
-                        <div class="glide__track" data-glide-el="track">
-                           <ul class="glide__slides">
-                           <li class="glide__slide">
-                              <img src="./assets/Images/about-beach.jpg" alt="Beach" class="about__img" />
-                           </li>
-                           <li class="glide__slide">
-                              <img src="./assets/Images/home-lake.jpg" alt="Lake" class="about__img" />
-                           </li>
-                           <li class="glide__slide">
-                              <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
-                           </li>
-                             <li class="glide__slide">
-                              <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
-                           </li>
-                             <li class="glide__slide">
-                              <img src="./assets/Images/home-mountain.jpg" alt="Mountain" class="about__img" />
-                           </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="about__shadow"></div>
-                     </div>
-            </div>
-         </section>
-
-         <!-- -------------------------- About section finished ---------------------------- -->
-
-         <!-- -------------------------- Gallery section ---------------------------- -->
-
-            <!-- <section class="gallery section" id="gallery">
-               <h2 class="section__title">Explore the 
-               Sri Lankan Gallery</h2>
-                     <div class="container" id="gallery-grid">
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Ella">
-                           <div class="box" style="grid-area: box1;">
-                           <h2>Ella</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Unawatuna">
-                           <div class="box" style="grid-area: box2;">
-                           <h2>Unawatuna</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Sigiriya">
-                           <div class="box" style="grid-area: box3;">
-                           <h2>Sigiriya</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Kandy">
-                           <div class="box" style="grid-area: box4;">
-                           <h2>Kandy</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Nuwara Eliya">
-                           <div class="box" style="grid-area: box5;">
-                           <h2>Nuwara Eliya</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Arugam Bay">
-                           <div class="box" style="grid-area: box6;">
-                           <h2>Arugam Bay</h2>
-                           </div>
-                        </a>
-                        <a href="./assets/Images/home-beach.jpg" data-lightbox="gallery" data-title="Trincomalee">
-                           <div class="box" style="grid-area: box7;">
-                           <h2>Trincomalee</h2>
-                           </div>
-                        </a>
-                     </div>
-            </section> -->
-
-            <section class="gallery section" id="gallery">
-            <h2 class="section__title">Explore Sri Lanka</h2>
-            <div class="gallery__container" id="gallery-grid"></div>
-            </section>
-
-        <!-- -------------------------- Gallery section finished ---------------------------- -->
-
-        <!-- -------------------------- explore section finished ---------------------------- -->
-         <section class="explore section" id="explore">
-            <div class="explore__container">
-               <div class="explore__image">
-                  <img src="./assets/Images/explore-beach.jpg" alt="expore image" class="explore__img">
-                  <div class="explore__shadow"></div>
-               </div>
-               <div class="explore__content container grid">
-                  <div class="explore__data">
-                     <h2 class="section__title">
-                        Explore The <br> 
-                        Best Paradises
-                     </h2>
-                     <p class="explore__description">
-                        Exploring paradise — from sun-drenched islands to misty valleys — is one of travel’s greatest gifts.
-                        It offers harmony, peace, and a deep connection to nature. In Sri Lanka, you’ll find all of this and more,
-                        wrapped in comfort and unforgettable beauty.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         
-          <!-- -------------------------- explore section finished ---------------------------- -->
-
-           <!-- -------------------------- contact section ---------------------------- -->
-               <section class="contact section" id="contact">
-               <div class="contact__container container grid">
-                  <!-- Contact Form -->
-                  <div class="contact__data">
-                     <h2 class="section__title">
-                     Your Journey <br>
-                     Starts Here
-                     </h2>
-                     <p class="contact__description">
-                     Tell us where you dream of going and we’ll craft the perfect Sri Lankan travel plan just for you.
-                     </p>
-
-                     <form action="" id="contact-form" class="contact__form">
-                     <input type="text" placeholder="Your Name" class="contact__input" required>
-                     <input type="email" placeholder="Your Email" class="contact__input" required>
-                     <textarea placeholder="Your Message" class="contact__input" rows="5" required></textarea>
-                     <button class="contact__button button" type="submit">
-                        Send Message <i class="ri-arrow-right-line"></i>
-                     </button>
-                     </form>
-                  </div>
-
-                  <!-- Image Section -->
-                  <div class="contact__image">
-                     <img src="./assets/Images/contact-island.jpg" alt="Contact image" class="contact__img">
-                     <div class="contact__shadow"></div>
-                  </div>
-               </div>
-               </section>
-         <!-- -------------------------- contact section finished ---------------------------- -->
-      </main>
-
-
-      <footer class="footer">
-  <div class="footer__container container grid">
-    <div class="footer__group">
-      <div class="footer__social">
-        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
-          <i class="ri-facebook-line"></i>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-          <i class="ri-instagram-line"></i>
-        </a>
-        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-          <i class="ri-twitter-line"></i>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
-          <i class="ri-youtube-line"></i>
-        </a>
+   
+  <!-- ========== HEADER/NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">WANDERSL</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
       </div>
-      <span class="footer__copy">
-        &#169; Copyright wandersl. All rights reserved
-      </span>
+      <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main">
+    <!-- HERO SECTION -->
+    <section class="home section" id="home">
+      <canvas id="granim-canvas" class="home__bg"></canvas>
+      <img src="./assets/Images/home-bg.jpg" alt="home background" class="home__bg">
+      <div class="home__shadow"></div>
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">Find Your Paradise <br>in Sri Lanka</h1>
+          <p class="home__description">From golden beaches to lush hill country, ancient cities to wild safaris — explore the island where every moment tells a story.</p>
+          <a href="#gallery" class="button">Explore Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <!-- Home Cards -->
+        <div class="home__cards grid">
+          <article class="home__card"><img src="./assets/Images/home-ella.jpg" alt="Ella" class="home__card-img"><h3 class="home__card-title">Ella</h3><div class="home__card-shadow"></div></article>
+          <article class="home__card"><img src="./assets/Images/home-unawatuna.jpg" alt="Unawatuna" class="home__card-img"><h3 class="home__card-title">Unawatuna</h3><div class="home__card-shadow"></div></article>
+          <article class="home__card"><img src="./assets/Images/home-mirissa.jpg" alt="Mirissa" class="home__card-img"><h3 class="home__card-title">Mirissa</h3><div class="home__card-shadow"></div></article>
+          <article class="home__card"><img src="./assets/Images/home-sigiriya.jpg" alt="Sigiriya" class="home__card-img"><h3 class="home__card-title">Sigiriya</h3><div class="home__card-shadow"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <h2 class="section__title">Discover the <br>Magic of Sri Lanka</h2>
+          <p class="about__description">Every journey begins with a moment of curiosity — a desire to step into the unknown and return with stories worth sharing...</p>
+          <a href="#explore" class="button">Begin Your Sri Lankan Story <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <!-- About Carousel -->
+        <div class="about__image">
+          <div class="glide about-carousel">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="./assets/Images/about-beach.jpg" alt="Beach" class="about__img" /></li>
+                <li class="glide__slide"><img src="./assets/Images/about-beach-2.jpg" alt="Beach" class="about__img" /></li>
+                <li class="glide__slide"><img src="./assets/Images/about-train.jpg" alt="Train" class="about__img" /></li>
+                <li class="glide__slide"><img src="./assets/Images/about-lighthouse.jpg" alt="Lighthouse" class="about__img" /></li>
+                <li class="glide__slide"><img src="./assets/Images/about-waterfall.jpg" alt="Waterfall" class="about__img" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__shadow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery section" id="gallery">
+      <h2 class="section__title">Explore Sri Lanka</h2>
+      <div class="gallery__container" id="gallery-grid"></div>
+    </section>
+
+    <!-- EXPLORE SECTION -->
+    <section class="explore section" id="explore">
+      <div class="explore__container">
+        <div class="explore__image">
+          <img src="./assets/Images/explore-beach.jpg" alt="Explore beach" class="explore__img">
+          <div class="explore__shadow"></div>
+        </div>
+        <div class="explore__content container grid">
+          <div class="explore__data">
+            <h2 class="section__title">Explore The <br>Best Paradises</h2>
+            <p class="explore__description">From sun-drenched islands to misty valleys — travel offers harmony and beauty. Sri Lanka wraps it all in unforgettable charm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+      <div class="contact__container container grid">
+        <div class="contact__data">
+          <h2 class="section__title">Your Journey <br>Starts Here</h2>
+          <p class="contact__description">Tell us where you dream of going and we’ll craft the perfect Sri Lankan plan for you.</p>
+          <form id="contact-form" class="contact__form">
+            <input type="text" placeholder="Your Name" class="contact__input" required>
+            <input type="email" placeholder="Your Email" class="contact__input" required>
+            <textarea placeholder="Your Message" class="contact__input" rows="5" required></textarea>
+            <button class="contact__button button" type="submit">Send Message <i class="ri-arrow-right-line"></i></button>
+          </form>
+        </div>
+        <div class="contact__image">
+          <img src="./assets/Images/contact-island.jpg" alt="Contact island" class="contact__img">
+          <div class="contact__shadow"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div class="footer__group">
+        <div class="footer__social">
+          <a href="https://www.facebook.com" target="_blank" class="footer__social-link"><i class="ri-facebook-line"></i></a>
+          <a href="https://www.instagram.com" target="_blank" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+          <a href="https://twitter.com" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="footer__social-link"><i class="ri-youtube-line"></i></a>
+        </div>
+        <span class="footer__copy">&copy; Copyright Wandersl. All rights reserved</span>
+      </div>
     </div>
-  </div>
-</footer>
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-      </a>
-      <script src="./assets/js/scrollreveal.min.js"></script>
-      <script src="./assets/Js/main.js"></script>
+  </footer>
+
+  <!-- ========== SCROLL UP BUTTON ========== -->
+  <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+  <!-- ========== JS SCRIPTS ========== -->
+  <script src="./assets/js/scrollreveal.min.js"></script>
+  <script src="./assets/Js/main.js"></script>
 </body>
 </html>

@@ -409,6 +409,7 @@ img {
   position: relative;
   justify-self: center;
   overflow: hidden;
+  border-radius: 50px;
 }
 .contact__img {
   width: 300px;
@@ -721,7 +722,7 @@ img {
   padding: 1rem;
   height: 100%;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.3); /* dark overlay for text readability */
+  background-color: rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
